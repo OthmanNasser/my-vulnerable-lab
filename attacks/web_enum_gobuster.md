@@ -16,9 +16,8 @@ Enumerate hidden directories and pages on the target web server using `gobuster`
 ---
 
 ## 🔍 Step 1: Basic Directory Scan
-
-```bash
 gobuster dir -u http://192.168.56.102 -w /usr/share/wordlists/dirb/common.txt
+
 ### 🔹 Result:
 /index.html          (Status: 200)
 /admin               (Status: 301)
