@@ -45,13 +45,18 @@ This is a custom penetration testing lab designed for practicing offensive secur
 
 ---
 
-## Attack Scenarios (coming soon)
+## 📂 Documented Attacks
 
-Each attack will be documented in its own Markdown file inside `/attacks/` directory:
+Below are the documented attack scenarios performed against the Metasploitable2 machine:
 
-- [ ] FTP Anonymous Access
-- [ ] vsftpd 2.3.4 Exploit
-- [ ] Simple Web Enumeration with gobuster
-- [ ] SQL Injection on Web App
+1. [FTP Anonymous Access](attacks/ftp_anonymous_access.md)  
+   → Scan FTP port and log in anonymously to explore files.
 
- 
+2. [vsftpd 2.3.4 Backdoor Exploit](attacks/vsftpd_backdoor_exploit.md)  
+   → Use Metasploit to exploit a backdoor vulnerability and gain shell access.
+
+3. [Web Directory Enumeration using Gobuster](attacks/web_enum_gobuster.md)  
+   → Discover hidden directories and files using wordlist brute force.
+
+> More attacks will be added soon (SQL Injection, Privilege Escalation, Hydra brute-force...).
+
