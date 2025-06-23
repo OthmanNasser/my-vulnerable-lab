@@ -33,7 +33,7 @@ gobuster dir -u http://192.168.56.102 -w /usr/share/wordlists/dirb/common.txt
 /backup exists but is restricted (403) — possibly interesting.
 Consider brute-forcing deeper paths using recursive scanning.
 
-| Additional Flags |
++ Additional Flags
 You can add useful flags to enhance results:
 gobuster dir -u http://192.168.56.102 -w /usr/share/wordlists/dirb/common.txt -x php,txt,html -t 50
 -x: search for specific extensions (e.g., .php)
