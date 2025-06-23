@@ -21,11 +21,12 @@ Enumerate hidden directories and pages on the target web server using `gobuster`
 gobuster dir -u http://192.168.56.102 -w /usr/share/wordlists/dirb/common.txt
 ```
 ### 🔹 Result:
+```bash
 /index.html          (Status: 200)
 /admin               (Status: 301)
 /uploads             (Status: 200)
 /backup              (Status: 403)
-
+```
 
 📝 Notes
 /admin is accessible and may lead to an admin panel.
