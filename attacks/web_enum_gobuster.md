@@ -29,20 +29,24 @@ gobuster dir -u http://192.168.56.102 -w /usr/share/wordlists/dirb/common.txt
 ```
 
 📝 Notes
+```
 /admin is accessible and may lead to an admin panel.
 /uploads might allow file upload or contain sensitive files.
 /backup exists but is restricted (403) — possibly interesting.
 Consider brute-forcing deeper paths using recursive scanning.
-
+```
 + Additional Flags
+```
 You can add useful flags to enhance results:
 gobuster dir -u http://192.168.56.102 -w /usr/share/wordlists/dirb/common.txt -x php,txt,html -t 50
 -x: search for specific extensions (e.g., .php)
 -t: number of threads (speed up)
-
+```
 🔚 Conclusion
+```
 The HTTP service on the target reveals several interesting directories that could be further investigated or exploited.
 Next steps could include:
 Attempt access to /admin
 Look inside /uploads for exposed files
 Analyze /backup using LFI or bypass techniques
+```
